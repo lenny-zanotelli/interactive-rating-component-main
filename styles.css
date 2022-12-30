@@ -1,0 +1,128 @@
+
+:root {
+    /* Primary */
+    --orange: hsl(25, 97%, 53%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    --fs-p: 0.9375rem;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--very-dark-blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px none black;
+    border-radius: 6%;
+    background-color: var(--dark-blue);
+    margin: 1rem;
+    padding: 1.5rem;
+
+    
+}
+
+.card__icon-star {
+    border: 1px none black;
+    background-color: var(--light-grey);
+    border-radius: 100%;
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.card__title {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card__content {
+    color: var(--light-grey);
+    font-weight: 400;
+    font-size: var(--fs-p);
+    line-height: 1.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.form__input {
+    display: none;
+}
+
+.form__input + .form__label {
+    cursor: pointer;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.form__input:checked + .form__label {
+    background-color: var(--orange);
+}
+
+.form__input:hover + .form__label {
+    background-color: var(--orange);
+}
+
+.card__submit-btn {
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    font-weight: 700;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.card__submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+
+.thank-you-state-card {}
+
+.thank-you-state-card__thx-img {}
+
+.thank-you-state-card__ratings {}
+
+.thank-you-state-card__title {
+    font-weight: 700;
+}
+
+.thank-you-state-card__content {
+    font-weight: 400;
+    font-size: var(--fs-p);
+}
