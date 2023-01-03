@@ -1,6 +1,4 @@
-
-:root {
-    /* Primary */
+:root {    /* Primary */
     --orange: hsl(25, 97%, 53%);
     /* Neutral */
     --white: hsl(0, 0%, 100%);
@@ -8,7 +6,6 @@
     --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
-
     --fs-p: 0.9375rem;
 }
 
@@ -29,8 +26,6 @@ body {
     background-color: var(--dark-blue);
     margin: 1rem;
     padding: 1.5rem;
-
-    
 }
 
 .card__icon-star {
@@ -110,19 +105,48 @@ body {
     color: var(--orange);
 }
 
+.thank-you-state-card {
+    border: 1px none black;
+    border-radius: 6%;
+    background-color: var(--dark-blue);
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    display: none;
+}
 
-
-.thank-you-state-card {}
-
-.thank-you-state-card__thx-img {}
-
-.thank-you-state-card__ratings {}
+.thank-you-state-card__ratings {
+    color: var(--orange);
+    border: 1px none black;
+    background-color: var(--very-dark-blue);
+    border-radius: 40px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
 
 .thank-you-state-card__title {
     font-weight: 700;
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 .thank-you-state-card__content {
     font-weight: 400;
     font-size: var(--fs-p);
+    color: var(--light-grey);
+    font-weight: 400;
+    font-size: var(--fs-p);
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 2560px) {
+    .card {
+        width: 300px;
+    }
+
+    .thank-you-state-card {
+        width: 300px;
+    }
 }
